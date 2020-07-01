@@ -1,0 +1,155 @@
+<h2> Integration Test List </h2><hr>
+<h3> Packages: test/int/eventmanager </h3>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi32 { color: #00aa00; }
+.ansi37 { color: #F5F1DE; }
+.ansi90 { color: #404356; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+Running Suite: Event Manager Int Test Suite
+===========================================
+
+Controlplane Event Manager <span class="ansi90">Event Manager API</span> when processing alerts from alertmanager 
+  <span class="ansi1">should process a firing alert</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/controlplane_test.go:73</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Controlplane Event Manager <span class="ansi90">Event Manager API</span> when processing alerts from alertmanager 
+  <span class="ansi1">should process a resolved alert</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/controlplane_test.go:89</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Controlplane Event Manager <span class="ansi90">Event Manager API</span> when processing alerts from alertmanager 
+  <span class="ansi1">should correlate a firing and resolved alert</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/controlplane_test.go:104</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Controlplane Event Manager <span class="ansi90">Event Manager API</span> when processing alerts from alertmanager 
+  <span class="ansi1">should have a config later than the end time in a firing alert</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/controlplane_test.go:135</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Controlplane Event Manager <span class="ansi90">Event Manager API</span> when retrieving a missing alert 
+  <span class="ansi1">should return a Not Found error</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/controlplane_test.go:167</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Controlplane Event Manager <span class="ansi90">Alert Events Query</span> 
+  <span class="ansi1">should be able to store and query an alert (with enclosing events)</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/controlplane_test.go:176</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager <span class="ansi90">when alerted on a health score exceeding the threshold</span> 
+  <span class="ansi1">should the process the alert and event</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/eventmanager_test.go:49</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager <span class="ansi90">ConfigChangeEvents</span> 
+  <span class="ansi1">should capture create, modify, and delete operations</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/eventmanager_test.go:70</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when accessing cassandra</span> 
+  <span class="ansi1">eventmanager schema should exist</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:30</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing alert details</span> 
+  <span class="ansi1">should store an alert detail in Cassandra and query it successfully</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:43</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing alert details</span> with a TTL 
+  <span class="ansi1">WindowsById rows should have a TTL of 8 days</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:82</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing alert details</span> with a TTL 
+  <span class="ansi1">AlertedWindowsByEntityID rows should have a TTL of 8 days</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:93</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing alert details</span> 
+  <span class="ansi1">should handle a query with no results</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:105</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing alert fingerprints</span> 
+  <span class="ansi1">should store an alert fingerprint in Cassandra and query it successfully</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:114</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing alert fingerprints</span> 
+  <span class="ansi1">should overwrite an alert fingerprint in Cassandra and query it successfully</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:134</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing alert fingerprints</span> 
+  <span class="ansi1">should handle a query with no results</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:161</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing events</span> with a TTL 
+  <span class="ansi1">EventsByID rows should have TTL of 8 days</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:198</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when storing events</span> with a TTL 
+  <span class="ansi1">EventsByTimestamp rows should have TTL of 8 days</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:209</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when getting events</span> 
+  <span class="ansi1">should query for all events within a time frame</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:223</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when getting events</span> 
+  <span class="ansi1">should de-duplicate two identical events with different timestamps in the results</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:247</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Cassandra Accessor <span class="ansi90">when getting events</span> 
+  <span class="ansi1">should be able to query a time frame of 8 days</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/cassandra_test.go:277</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Prometheus Accessor <span class="ansi90">NewPrometheusAccessor</span> 
+  <span class="ansi1">should create a prometheus accessor</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/prometheus_test.go:59</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Prometheus Accessor <span class="ansi90">UpsertHealthScoreThreshold</span> 
+  <span class="ansi1">should be able to upsert health score threshold</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/prometheus_test.go:66</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Prometheus Accessor <span class="ansi90">SendAlertNotification</span> 
+  <span class="ansi1">should be able to send an alert notification</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/prometheus_test.go:81</span>
+<span class="ansi32">•</span>
+<span class="ansi90">------------------------------</span>
+Event Manager Prometheus Accessor <span class="ansi90">GetHealthScoresForAlert</span> 
+  <span class="ansi1">should be able to return health scores</span>
+  <span class="ansi37">/Users/artale/aspenmesh/go/src/github.com/aspenmesh/apiserver/test/int/eventmanager/prometheus_test.go:111</span>
+<span class="ansi32">•</span>
+
+
+</pre>
+</body>
+
+</html>
